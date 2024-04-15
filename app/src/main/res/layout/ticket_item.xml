@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="12dp"
+    android:elevation="8dp"
+    android:background="@drawable/rounded_corner"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <ImageView
+                    android:id="@+id/image_tk"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/imagenticket" />
+
+                <TextView
+                    android:id="@+id/title_tk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/image_tk"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/search"/>
+
+                <TextView
+                    android:id="@+id/date_tk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginVertical="4dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginHorizontal="3dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/title_tk"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/place_tk"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_marginVertical="4dp"
+                    app:layout_constraintTop_toBottomOf="@+id/date_tk"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/location_tk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/place_tk"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
